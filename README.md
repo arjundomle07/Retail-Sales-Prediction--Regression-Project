@@ -1,30 +1,48 @@
 # Retail-Sales-Prediction--Regression-Project
 
-## Project Summary -
 
-This project focuses on predicting retail sales for Rossmann Stores using historical data. The dataset includes information about the stores, competitors, types, holidays, customers, and sales transactions. The workflow involves data collection, cleaning, exploratory data analysis (EDA), feature engineering, and model implementation.
+## Project Summary
 
-After data understanding, we cleaned and merged datasets, handled null values, and prepared features for visualization. EDA provided valuable insights for future machine learning model decisions.
+### Retail Sales Prediction for Rossmann Stores
 
-Feature engineering and data preprocessing created new features like PromoDuration and CompetitionDuration while removing irrelevant features. Outliers were detected and treated, and categorical features were encoded numerically using One-Hot Encoding.
+#### Project Overview
+This technical document provides a summary of a project aimed at predicting retail sales for Rossmann Stores. The project involves the utilization of historical data, encompassing information about the stores, competitors, types, holidays, customers, and sales transactions. The workflow includes essential steps such as data collection, cleaning, exploratory data analysis (EDA), feature engineering, and model implementation.
 
-Data transformation techniques were applied to achieve normal distribution and scale uniformity. The dataset was split into training and testing sets. Several machine learning algorithms were used, including linear regression, decision trees, random forests, LGBM, and XGBoost.
+#### Data Understanding and Cleaning
+Before diving into model development, the team undertook a comprehensive data understanding phase. This involved collecting and merging datasets, handling missing values, and preparing features for visualization. The EDA phase provided valuable insights that informed subsequent machine learning model decisions.
 
-Linear regression achieved 85.25% accuracy with an R2 score of 0.70.
+#### Feature Engineering and Preprocessing
+Feature engineering was a crucial aspect of the project. New features like PromoDuration and CompetitionDuration were created, and irrelevant features were removed. The team also detected and treated outliers in the data. Categorical features were encoded numerically using One-Hot Encoding to make them suitable for machine learning algorithms.
 
-Decision trees captured 90% of variance with 92.85% accuracy.
+#### Data Transformation
+To ensure the data met the assumptions of machine learning models, data transformation techniques were applied. These techniques aimed to achieve a normal distribution and uniform scaling.
 
-Random Forests reached 93.86% accuracy and reduced processing time.
+#### Model Implementation
+The dataset was split into training and testing sets, and several machine learning algorithms were explored, including:
 
-XGBoost was the final model with 93.94% accuracy and 6.06% mean absolute percentage error.
+1.  Linear Regression: Achieved 85.25% accuracy with an R2 score of 0.70.
+2.  Decision Trees: Captured 90% of variance with 92.85% accuracy.
+3.  Random Forests: Reached 93.86% accuracy and reduced processing time.
+4.  XGBoost: Selected as the final model with 93.94% accuracy and a 6.06% mean absolute percentage error.
 
-The residuals' mean of 1.31 indicated normally distributed residuals, making XGBoost the optimal model for deployment.
+#### Model Selection
+The final selection of the XGBoost model was based on its high accuracy and low mean absolute percentage error. The residuals' mean of 1.31 indicated normally distributed residuals, making XGBoost the optimal model for deployment.
 
+#### GitHub Repository
+You can find the complete project, including code and documentation, on the GitHub repository: Retail Sales Prediction - Regression Project
 
-## Problem Statement -
+## Problem Statement
 
-Rossmann, a large pharmacy chain with stores in 7 European countries, faces the challenge of accurately predicting daily sales for their over 3,000 stores. Store sales are influenced by numerous factors, including promotions, competition, holidays, seasons, and local conditions. Store managers are currently responsible for making these predictions, leading to variations in accuracy due to individual circumstances.
+### Sales Prediction for Rossmann Stores
 
-To address this issue, we have historical sales data for 1,115 Rossmann stores. The goal is to create a predictive model for the "Sales" column in the test dataset. It's important to note that some stores in the dataset were temporarily closed for refurbishment, which adds complexity to the forecasting task.
+#### Background
+Rossmann, a prominent pharmacy chain with stores in 7 European countries, faces the challenge of accurately predicting daily sales for their 3,000+ stores. Sales are influenced by numerous factors, including promotions, competition, holidays, seasons, and local conditions. The current approach relies on store managers to make predictions, leading to variations in accuracy due to individual circumstances.
 
-In simpler terms, the challenge is to build a model that can accurately predict the daily sales of Rossmann stores, taking into account various factors, and to do so consistently across all stores, even when some are temporarily closed for renovation. This can help Rossmann optimize their operations and resource allocation.
+#### Project Goal
+The primary goal of this project is to create a predictive model for the "Sales" column in the test dataset. It's essential to note that some stores in the dataset were temporarily closed for refurbishment, adding complexity to the forecasting task.
+
+#### Challenge
+In simpler terms, the challenge is to build a model that can accurately predict the daily sales of Rossmann stores, taking into account various factors, and to do so consistently across all stores, even when some are temporarily closed for renovation. This predictive model will help Rossmann optimize their operations and resource allocation.
+
+This project offers a data-driven solution to a real-world problem faced by Rossmann, enabling them to make more accurate and consistent sales predictions, ultimately enhancing their operational efficiency.
+
