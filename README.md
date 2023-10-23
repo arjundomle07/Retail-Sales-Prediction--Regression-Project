@@ -1,6 +1,6 @@
 # Retail-Sales-Prediction--Regression-Project
 
-Project Summary -
+##**Project Summary -**
 
 This project focuses on predicting retail sales for Rossmann Stores using historical data. The dataset includes information about the stores, competitors, types, holidays, customers, and sales transactions. The workflow involves data collection, cleaning, exploratory data analysis (EDA), feature engineering, and model implementation.
 
@@ -21,7 +21,7 @@ XGBoost was the final model with 93.94% accuracy and 6.06% mean absolute percent
 The residuals' mean of 1.31 indicated normally distributed residuals, making XGBoost the optimal model for deployment.
 
 
-Problem Statement - 
+##**Problem Statement -** 
 
 Rossmann, a large pharmacy chain with stores in 7 European countries, faces the challenge of accurately predicting daily sales for their over 3,000 stores. Store sales are influenced by numerous factors, including promotions, competition, holidays, seasons, and local conditions. Store managers are currently responsible for making these predictions, leading to variations in accuracy due to individual circumstances.
 
